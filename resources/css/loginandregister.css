@@ -1,0 +1,192 @@
+/* General Styles for Both Pages */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container, .login-container {
+    width: 400px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.logo-container, .logo {
+    margin-bottom: 20px;
+}
+
+.logo-container img, .logo img {
+    width: 120px;
+}
+
+h2 {
+    color: #324879;
+    margin-bottom: 20px;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Phone Number Container */
+.phone-container {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-container select {
+    width: 40%;
+}
+
+.phone-container input {
+    width: 60%;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #358C9C;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #324879;
+}
+
+/* Link Styling */
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    color: #358C9C;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Checkbox Styling */
+.input-group input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.input-group label a {
+    color: #358C9C;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.input-group label a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button Hover */
+.login-btn {
+    background-color: #358C9C;
+}
+
+.login-btn:hover {
+    background-color: #F68716;
+}
+
+/* Footer Links */
+.links a {
+    font-size: 14px;
+}
+
+
+/*Header Styling*/
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: #324879; /* Change to your preferred header background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #358C9C; /* Hover color for navigation links */
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
