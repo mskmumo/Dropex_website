@@ -1,0 +1,47 @@
+composer require pusher/pusher-php-server
+composer require simplesoftwareio/simple-qrcode
+7. Testing and Optimization
+Features:
+Accuracy Testing:
+
+Validate the GPS coordinates and route mapping for accuracy.
+Test ETA calculations against actual delivery times.
+Performance Optimization:
+
+Cache frequently accessed data (e.g., current status for active parcels).
+Optimize database queries for real-time updates.
+User Feedback:
+
+Include a feedback form for users to report issues with tracking.
+<?php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCategoriesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->string('name');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('categories');
+    }
+} 
